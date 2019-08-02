@@ -56,6 +56,16 @@ table {
 html, body {
 	height: 100%;
 	width: 70%;
+	background-image: url(https://blackwhite.pictures/public/uploads/preview/blackwhite-photography-362715494714041ts9hwkjo1.jpeg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	
+}
+
+.container {
+	width: 150%;
+	background-color: dimgrey;
+	
 }
 
 @color: #000000;
@@ -74,7 +84,7 @@ nav {
 }
 
 nav a {
-	color: @color;
+	color: white;
 	text-decoration: none;
 }
 
@@ -83,6 +93,7 @@ nav a {
 	width: 100%;
 	margin-left: 50%;
 	background-color: @background-color;
+	padding: 3%;
 }
 
 .profile-pic {
@@ -112,7 +123,9 @@ nav a {
 }
 
 .button-space {
-	padding: 4%;
+	padding: 2%;
+	margin-left: 2%;
+	
 }
 
 .button {
@@ -120,14 +133,21 @@ nav a {
 	font-size: 20px;
 	background-color: slategrey;
 	color: white;
+	
 }
 
 .stuff {
 	display: inline-flex;
 	flex-direction: row;
-	width: 50%;
-	margin-left: 60%;
+	width: 100%;
+	margin-left: 50%;
+	margin-top: 2%;
 	padding: 3%;
+	background-color: @background-color
+}
+
+.text-wall {
+	width: 100%;
 }
 
 .text-wall h1 {
@@ -142,7 +162,72 @@ nav a {
 	margin-bottom: 2%;
 }
 
+.skillz {
+	width: 100%;
+}
+
 .skillz h1{
 	font-family: @font-family;
 	font-size: 26px;
+}
+
+.skillz h2 {
+	border: 1px solid black;
+	padding: 5%;
+}
+
+.work-history {
+	width: 100%;
+	margin-left: 50%;
+	margin-top: 2%;
+	padding: 3%;
+	background-color: @background-color
+}
+
+.work-history h1 {
+	text-align: center;
+	font-family: @font-family;
+	font-size: 26px;
+	margin-bottom: 3%;
+}
+
+.jobs {
+	text-align: center;
+	width: 100%;
+	border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.heading {
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 15px;
+}
+
+th {
+	border: 2px solid black;
+}
+
+td {
+	border: 2px solid black;
+	padding: 15px;
+}
+
+footer {
+	text-align: center;
+   background-color: darkgrey;
+   width: 100%;
+   margin-left: 50%;
+	margin-top: 2%;
+	padding: 3%;
+	font-family: @font-family;
+	font-size: 26px;
+}
+
+@media(max-width: 500px) /*mobile*/ {
+        
+	body {
+		max-width: 500px;
+	}
+
 }
